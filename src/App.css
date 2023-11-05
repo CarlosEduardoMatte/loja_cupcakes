@@ -1,38 +1,153 @@
-.App {
+/* estilo geral */
+
+h2{
+  font-size: 25px;
+  font-family: 'Montserrat-800';
+  color: #D82D7E;
+}
+
+h3{
+  font-size: 20px!important;
+  font-family: 'Montserrat-700';
+  color: #000;
+}
+
+p{
+  font-size: 18px;
+  font-family: 'Montserrat-600';
+  color: #000000;
+}
+
+a {
+  font-size: 16px!important;
+  font-family: 'Montserrat-600';
+  text-decoration: none;
+  color: #000!important;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #00000098!important;
+  text-decoration: none!important;
+}
+
+i{
+  padding-right: 10px;
+}
+
+*{margin: 0; padding: 0;}
+
+/*header*/
+.header{
+  background: #F4F2F3;
+}
+.coluna {
+  float: left; /* Faz com que as colunas fiquem alinhadas horizontalmente */
+  width: 33.33%; /* Divide o espaço igualmente entre as três colunas */
+}
+
+/* pesquisa header*/
+
+.barraDePesquisa{
+  border-radius: 20px;
+  padding: 7px 2px 7px 12px;
+  border: 1px solid #33333338;
+  width: 24em;
+}
+
+.botaoBarraDePesuisa{
+  border: none;
+  position: relative;
+  right: 33px;
+  background: transparent;
+}
+
+/*menu header*/
+.menu{
+  list-style:none;
+  border:1px solid #c0c0c0;
+  float:left;
+}
+
+.menu li{
+  position:relative;
+  float:left;
+  border-right:1px solid #c0c0c0;
+}
+
+.menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+
+.menu li a:hover{
+  background:#333;
+  color:#fff;
+  -moz-box-shadow:0 3px 10px 0 #CCC;
+  -webkit-box-shadow:0 3px 10px 0 #ccc;
+  text-shadow:0px 0px 5px #fff;
+}
+
+.menu li  ul{
+  position:absolute;
+  top:25px;
+  left:0;
+  background-color:#fff;
+  display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+  border:1px solid #c0c0c0;
+  display:block;
+  width:150px;
+}
+
+.menu, .pesquisa{ 
+  margin: auto;
+  border: none;
+}
+
+
+/* filtros*/
+.fitroProtudos {
+  padding: 30px;
+  background: #F4F2F3;
+}
+
+button#botaoBuscar {
+  background: #D82D7E;
+  border-radius: 30px;
+  width: 160px;
+  height: 38px;
+  border: none;
+}
+
+/* body */
+
+/* Quem Somos */
+
+.corBackgroundOpacidade{
+  background: rgba(0, 0, 0, 0.3);;
+}
+
+.quemSomos{
+  background-image: url('./imagens/background_quem_somos.png');
+  padding: 5em 12em;
+}
+
+.textoQuemSomos, .tituloQuemSomos{
+  color: #fff;
+  padding-bottom: 1em;
+}
+
+.fotoDestaqueQuemSomos {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/*Footer*/
+/* informações */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer{
+  padding: 2em 12em;
+  background: #F4F2F3;
 }
